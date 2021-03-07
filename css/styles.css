@@ -1,0 +1,17 @@
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  background-color: #1da1f2;
+}
+.home-link {
+  color: #1da1f2;
+}
+
+#mid-column::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}

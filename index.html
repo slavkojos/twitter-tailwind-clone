@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter</title>
+  </head>
+  <link rel="stylesheet" href="css/styles.css" />
+  <body class="bg-black overflow-hidden">
+    <div class="sm:container mx-auto">
+      <div class="flex flex-row h-screen">
+        <div class="border border-white w-1/5 bg-black">
+          <nav class="flex flex-col justify-between items-center h-screen">
+            <div class="pt-4 px-16 pr-20">
+              <a href=""><img src="/assets/svgexport-3.svg" alt="" /></a>
+              <a
+                class="flex items-end home-link text-xl font-semibold hover:bg-blue-500 rounded-full hover:bg-opacity-10 py-4"
+                href=""
+                ><img class="inline mr-5 pl-2" src="/assets/svgexport-4.svg" alt="" />Home</a
+              >
+              <a
+                class="flex items-end text-white text-xl font-semibold hover:bg-blue-500 rounded-full hover:bg-opacity-10 py-4"
+                href=""
+                ><img class="inline mr-5 pl-2" src="/assets/svgexport-5.svg" alt="" />Explore</a
+              >
+              <a
+                class="flex items-end text-white text-xl font-semibold hover:bg-blue-500 rounded-full hover:bg-opacity-10 py-4"
+                href=""
+                ><img class="inline mr-5 pl-2" src="/assets/svgexport-6.svg" alt="" />Notifications</a
+              >
+              <a
+                class="flex items-end text-white text-xl font-semibold hover:bg-blue-500 rounded-full hover:bg-opacity-10 py-4"
+                href=""
+                ><img class="inline mr-5 pl-2" src="/assets/svgexport-7.svg" alt="" />Messages</a
+              >
+              <a
+                class="flex items-end text-white text-xl font-semibold hover:bg-blue-500 rounded-full hover:bg-opacity-10 py-4"
+                href=""
+                ><img class="inline mr-5 pl-2" src="/assets/svgexport-8.svg" alt="" />Bookmarks</a
+              >
+              <a
+                class="flex items-end text-white text-xl font-semibold hover:bg-blue-500 rounded-full hover:bg-opacity-10 py-4"
+                href=""
+                ><img class="inline mr-5 pl-2" src="/assets/svgexport-9.svg" alt="" />Lists</a
+              >
+              <a
+                class="flex items-end text-white text-xl font-semibold hover:bg-blue-500 rounded-full hover:bg-opacity-10 py-4"
+                href=""
+                ><img class="inline mr-5 pl-2" src="/assets/svgexport-10.svg" alt="" />Profile</a
+              >
+              <a
+                class="flex items-end text-white text-xl font-semibold hover:bg-blue-500 rounded-full hover:bg-opacity-10 py-4"
+                href=""
+                ><img class="inline mr-5 pl-2" src="/assets/svgexport-11.svg" alt="" />More</a
+              >
+              <button class="rounded-full w-60 px-8 text-white font-semibold py-3 my-2 text-center">Tweet</button>
+            </div>
+            <div class="pb-6 flex justify-between w-full px-7 items-center">
+              <div class="flex items-center">
+                <div class="mr-2">
+                  <img class="inline h-8" src="/assets/svgexport-10.svg" alt="" />
+                </div>
+                <div class="">
+                  <p class="text-white">Slavko</p>
+                  <p class="text-gray-500">@slavkojos</p>
+                </div>
+              </div>
+              <div class="">
+                <img class="inline h-4" src="/assets/svgexport-12.svg" alt="" />
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div id="mid-column" class="border border-white w-2/5 bg-black overflow-y-auto">
+          <div id="header" class="flex justify-between p-4 border-white border-b sticky top-0 bg-black">
+            <h6 class="text-white font-extrabold text-lg">Home</h6>
+            <img src="/assets/svgexport-13.svg" alt="" />
+          </div>
+          <div id="create-new-post" class="flex p-4 border-b">
+            <img class="h-1/4 w-12 mr-2" src="/assets/svgexport-10.svg" alt="" />
+            <div class="flex flex-col w-full">
+              <h5 class="text-gray-500 text-xl my-2 mb-8">What's happening?</h5>
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <img
+                    class="inline mr-1 cursor-pointer hover:bg-blue-700 rounded-full p-2 hover:bg-opacity-20"
+                    src="/assets/svgexport-15.svg"
+                    alt=""
+                  />
+                  <img
+                    class="inline cursor-pointer hover:bg-blue-700 rounded-full p-2 hover:bg-opacity-20"
+                    src="/assets/svgexport-16.svg"
+                    alt=""
+                  />
+                  <img
+                    class="inline cursor-pointer hover:bg-blue-700 rounded-full p-2 hover:bg-opacity-20"
+                    src="/assets/svgexport-17.svg"
+                    alt=""
+                  />
+                  <img
+                    class="inline cursor-pointer hover:bg-blue-700 rounded-full p-2 hover:bg-opacity-20"
+                    src="/assets/svgexport-18.svg"
+                    alt=""
+                  />
+                  <img
+                    class="inline cursor-pointer hover:bg-blue-700 rounded-full p-2 hover:bg-opacity-20"
+                    src="/assets/svgexport-19.svg"
+                    alt=""
+                  />
+                </div>
+                <button class="rounded-full w-20 px-4 text-white font-semibold py-2 text-center">Tweet</button>
+              </div>
+            </div>
+          </div>
+          <div id="posts" class="">
+            <div class="post flex w-full p-4">
+              <img class="rounded-full w-12 h-12" src="/assets/I4HKOLJw_400x400.png" alt="" />
+              <div class="ml-3 flex flex-col w-full">
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex items-center">
+                    <h6 class="text-white font-bold text-sm mr-1">Tailwind CSS</h6>
+                    <p class="text-gray-600">@tailwindcss · Jan 24</p>
+                  </div>
+                  <img class="h-4" src="/assets/svgexport-12.svg" alt="" />
+                </div>
+                <div class="mb-2">
+                  <p class="text-white">What do you want to see in Tailwind CSS v2.1?</p>
+                </div>
+                <div class="flex items-center justify-between pr-16">
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-22.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">236</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-23.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">63</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-24.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">848</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-25.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post flex w-full p-4">
+              <img class="rounded-full w-12 h-12" src="/assets/I4HKOLJw_400x400.png" alt="" />
+              <div class="ml-3 flex flex-col w-full">
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex items-center">
+                    <h6 class="text-white font-bold text-sm mr-1">Tailwind CSS</h6>
+                    <p class="text-gray-600">@tailwindcss · Jan 24</p>
+                  </div>
+                  <img class="h-4" src="/assets/svgexport-12.svg" alt="" />
+                </div>
+                <div class="mb-2">
+                  <p class="text-white">What do you want to see in Tailwind CSS v2.1?</p>
+                </div>
+                <div class="flex items-center justify-between pr-16">
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-22.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">236</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-23.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">63</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-24.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">848</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-25.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post flex w-full p-4">
+              <img class="rounded-full w-12 h-12" src="/assets/I4HKOLJw_400x400.png" alt="" />
+              <div class="ml-3 flex flex-col w-full">
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex items-center">
+                    <h6 class="text-white font-bold text-sm mr-1">Tailwind CSS</h6>
+                    <p class="text-gray-600">@tailwindcss · Jan 24</p>
+                  </div>
+                  <img class="h-4" src="/assets/svgexport-12.svg" alt="" />
+                </div>
+                <div class="mb-2">
+                  <p class="text-white">What do you want to see in Tailwind CSS v2.1?</p>
+                </div>
+                <div class="flex items-center justify-between pr-16">
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-22.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">236</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-23.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">63</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-24.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">848</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-25.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post flex w-full p-4">
+              <img class="rounded-full w-12 h-12" src="/assets/I4HKOLJw_400x400.png" alt="" />
+              <div class="ml-3 flex flex-col w-full">
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex items-center">
+                    <h6 class="text-white font-bold text-sm mr-1">Tailwind CSS</h6>
+                    <p class="text-gray-600">@tailwindcss · Jan 24</p>
+                  </div>
+                  <img class="h-4" src="/assets/svgexport-12.svg" alt="" />
+                </div>
+                <div class="mb-2">
+                  <p class="text-white">What do you want to see in Tailwind CSS v2.1?</p>
+                </div>
+                <div class="flex items-center justify-between pr-16">
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-22.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">236</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-23.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">63</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-24.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">848</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-25.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post flex w-full p-4">
+              <img class="rounded-full w-12 h-12" src="/assets/I4HKOLJw_400x400.png" alt="" />
+              <div class="ml-3 flex flex-col w-full">
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex items-center">
+                    <h6 class="text-white font-bold text-sm mr-1">Tailwind CSS</h6>
+                    <p class="text-gray-600">@tailwindcss · Jan 24</p>
+                  </div>
+                  <img class="h-4" src="/assets/svgexport-12.svg" alt="" />
+                </div>
+                <div class="mb-2">
+                  <p class="text-white">What do you want to see in Tailwind CSS v2.1?</p>
+                </div>
+                <div class="flex items-center justify-between pr-16">
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-22.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">236</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-23.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">63</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-24.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">848</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-25.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post flex w-full p-4">
+              <img class="rounded-full w-12 h-12" src="/assets/I4HKOLJw_400x400.png" alt="" />
+              <div class="ml-3 flex flex-col w-full">
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex items-center">
+                    <h6 class="text-white font-bold text-sm mr-1">Tailwind CSS</h6>
+                    <p class="text-gray-600">@tailwindcss · Jan 24</p>
+                  </div>
+                  <img class="h-4" src="/assets/svgexport-12.svg" alt="" />
+                </div>
+                <div class="mb-2">
+                  <p class="text-white">What do you want to see in Tailwind CSS v2.1?</p>
+                </div>
+                <div class="flex items-center justify-between pr-16">
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-22.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">236</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-23.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">63</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-24.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">848</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-25.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post flex w-full p-4">
+              <img class="rounded-full w-12 h-12" src="/assets/I4HKOLJw_400x400.png" alt="" />
+              <div class="ml-3 flex flex-col w-full">
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex items-center">
+                    <h6 class="text-white font-bold text-sm mr-1">Tailwind CSS</h6>
+                    <p class="text-gray-600">@tailwindcss · Jan 24</p>
+                  </div>
+                  <img class="h-4" src="/assets/svgexport-12.svg" alt="" />
+                </div>
+                <div class="mb-2">
+                  <p class="text-white">What do you want to see in Tailwind CSS v2.1?</p>
+                </div>
+                <div class="flex items-center justify-between pr-16">
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-22.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">236</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-23.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">63</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-24.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">848</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-25.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post flex w-full p-4">
+              <img class="rounded-full w-12 h-12" src="/assets/I4HKOLJw_400x400.png" alt="" />
+              <div class="ml-3 flex flex-col w-full">
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex items-center">
+                    <h6 class="text-white font-bold text-sm mr-1">Tailwind CSS</h6>
+                    <p class="text-gray-600">@tailwindcss · Jan 24</p>
+                  </div>
+                  <img class="h-4" src="/assets/svgexport-12.svg" alt="" />
+                </div>
+                <div class="mb-2">
+                  <p class="text-white">What do you want to see in Tailwind CSS v2.1?</p>
+                </div>
+                <div class="flex items-center justify-between pr-16">
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-22.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">236</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-23.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">63</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-24.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">848</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-25.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post flex w-full p-4">
+              <img class="rounded-full w-12 h-12" src="/assets/I4HKOLJw_400x400.png" alt="" />
+              <div class="ml-3 flex flex-col w-full">
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex items-center">
+                    <h6 class="text-white font-bold text-sm mr-1">Tailwind CSS</h6>
+                    <p class="text-gray-600">@tailwindcss · Jan 24</p>
+                  </div>
+                  <img class="h-4" src="/assets/svgexport-12.svg" alt="" />
+                </div>
+                <div class="mb-2">
+                  <p class="text-white">What do you want to see in Tailwind CSS v2.1?</p>
+                </div>
+                <div class="flex items-center justify-between pr-16">
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-22.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">236</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-23.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">63</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-24.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">848</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-25.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post flex w-full p-4">
+              <img class="rounded-full w-12 h-12" src="/assets/I4HKOLJw_400x400.png" alt="" />
+              <div class="ml-3 flex flex-col w-full">
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex items-center">
+                    <h6 class="text-white font-bold text-sm mr-1">Tailwind CSS</h6>
+                    <p class="text-gray-600">@tailwindcss · Jan 24</p>
+                  </div>
+                  <img class="h-4" src="/assets/svgexport-12.svg" alt="" />
+                </div>
+                <div class="mb-2">
+                  <p class="text-white">What do you want to see in Tailwind CSS v2.1?</p>
+                </div>
+                <div class="flex items-center justify-between pr-16">
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-22.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">236</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-23.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">63</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-24.svg" alt="" />
+                    <p class="text-gray-500 inline text-xs">848</p>
+                  </div>
+                  <div>
+                    <img class="h-5 mr-2 cursor-pointer inline" src="/assets/svgexport-25.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border border-white w-1/4 bg-black px-6">
+          <div class="rounded-full bg-gray-700 bg-opacity-40 flex w-100 py-3 px-4 justify-items-start mt-2 mb-4">
+            <img class="mr-4" src="/assets/svgexport-30.svg" alt="" />
+            <span class="text-gray-500">Search Twitter</span>
+          </div>
+          <div id="whatshappening" class="rounded-lg bg-gray-700 bg-opacity-50">
+            <h5 class="text-gray-200 font-extrabold text-xl border-b p-2 border-gray-500 px-3">What's happening</h5>
+            <div class="happening-post p-3 flex justify-between border-b border-gray-500">
+              <div class="mr-2">
+                <h6 class="text-gray-500">COVID-19 · LIVE</h6>
+                <p class="text-gray-300 font-bold text-sm">US Senate passes $1.9 trillion COVID-19 relief bill</p>
+              </div>
+              <img class="rounded-lg w-16 h-16" src="/assets/covid-19.jfif" alt="" />
+            </div>
+            <div class="happening-post p-3 flex justify-between border-b border-gray-500">
+              <div class="mr-2">
+                <h6 class="text-gray-500">COVID-19 · LIVE</h6>
+                <p class="text-gray-300 font-bold text-sm">US Senate passes $1.9 trillion COVID-19 relief bill</p>
+              </div>
+              <img class="rounded-lg w-16 h-16" src="/assets/covid-19.jfif" alt="" />
+            </div>
+            <div class="happening-post p-3 flex justify-between border-b border-gray-500">
+              <div class="mr-2">
+                <h6 class="text-gray-500">COVID-19 · LIVE</h6>
+                <p class="text-gray-300 font-bold text-sm">US Senate passes $1.9 trillion COVID-19 relief bill</p>
+              </div>
+              <img class="rounded-lg w-16 h-16" src="/assets/covid-19.jfif" alt="" />
+            </div>
+            <div class="happening-post p-3 flex justify-between border-b border-gray-500">
+              <div class="mr-2">
+                <h6 class="text-gray-500">COVID-19 · LIVE</h6>
+                <p class="text-gray-300 font-bold text-sm">US Senate passes $1.9 trillion COVID-19 relief bill</p>
+              </div>
+              <img class="rounded-lg w-16 h-16" src="/assets/covid-19.jfif" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
