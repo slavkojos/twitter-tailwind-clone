@@ -15,3 +15,7 @@ button {
   width: 0;
   height: 0;
 }
+
+.w-30 {
+  width: 30%;
+}
